@@ -315,3 +315,158 @@ Database Management System
     - RollBack
     - SavePoint
   
+
+## **Drop vs Truncate vs Delete**
+***
+| Drop & Truncate are DDL Command| Delete is a DML Command| 
+| Used to delete table from database| Used to delete rows from the table|
+| Once table is deleted all priviledges & indexes that are related to the table also get deleted| Not in the case of Delete|
+| Drop & Truncate cannot Rollback | Deletecn be Rollback|
+
+### Tuple
+***
+- A single row of table, which contains a single record is called **Tuple**
+
+### Degree & Cardinality
+***
+- **Degree**
+  > ***Total Number of Attributes(columns) in a table***
+  
+- **Cardinality**
+  > ***Total number of Records(Rows) in a table***
+  
+### Relation
+***
+- ***Every Individual Table in a Database is called Relation***
+- **Table==Relation**
+- A Table is a Relation because it stores the relations between data in its Rows & Columns
+
+### Relationship in DBMS
+***
+- There are basically 4 types of Relationship
+- **1. One to One**
+- **2. One to Many**
+- **3. Many to One**
+- **4. Many to Many**
+
+
+### Query vs Subquery
+***
+- Query is a statement that is used for extracting data from Database
+- ```sql Select * FROM table_name;```
+- Query within Query is SubQuery
+- ```sql Select * FROM student Where marks=(Select max(marks) FROM student);```
+
+### Role Of DML Compiler
+***
+> **It translate DML statements in a query language into low level instruction that the Query Evaluation Engine can easily Understand**
+
+
+### Clause
+***
+- Clause enable us to specific conditions that filetrs the results as per the requirement
+- Most Commonly used caluse are:-
+  - HAVING
+  - Where
+  - Order By
+  - Group BY
+
+
+## **Normalization**
+***
+- Normalization is the process of removing redundant data and reduce data dependancy in a table or relation
+- | 1-NF | 2-NF | 3-NF | BCNF | 4-NF |
+  |------|------|------|------|------|
+ 
+- **1. 1-NF**
+  > A realtion or table is said to be in 1-NF if it has **Atomic Property**
+  > Each Table cell should contain a single value
+  > Each records needs to Unique
+  
+- **2. 2-NF**
+  > A relation or table is said to be in 2-NF if it is in **1-NF** and **ALl non-prime attribute is fully functional dependent on Primary Key**
+  
+- **3. 3-NF**
+  > A relation or table is said to be in 3-NF if it is in **2-NF** and **There is no transitive functional dependency**
+  
+- **4. BCNF**
+  - ***Boyce-Codd Normal Form***
+  > It is considered as to be advance version of **3-NF** or **3.5-NF**
+  > A table or relation is said to be in BCNF if it is in **3-NF** and **For every funtional dependency p->Q, P should be super key of this table**
+  
+- **5. 4-NF**
+  > A relation or table is said to be in 4-NF if it is in **3-NF** and **No Multi-Value Dependency**
+  
+
+## **Denormalization**
+***
+- It is the reverse process of Normalization
+- It is the process of trying to improve the readability of the database by grouping data
+- Denormalization is also used for Speeding Up the performance
+
+
+### Transaction
+***
+- Transactions refers to the collection of multiple statement that are responsible for transferring a database from one consistent state to another consistent state
+
+
+### Trigger
+***
+- Triggers are defines as special kind of stored programs, which are automatically executed whenever a specific operation occurs in the database server
+
+
+### Lock
+***
+- Locking is mechanism to protect data integrity and ensure data consistency during transactions.
+- Locks are most common cause of blocked process
+
+- Differents Types Of Locks
+  - **Shared Lock**
+    > ***These locks are acquired by readers during read operation***
+    > When two transactions are granted read access, Data Updation is not allowed until shared lock is release.
+    
+  - **Exclusive Lock**
+    > ***Data items can be both read as well as write by transaction***
+    > In Multiple transactions do not modify the same data simultaneously
+    
+
+### Cursor
+***
+- Cursor is a temporary work area created in system memory when a SQL Statement is executed
+
+- A Cursor can hold more than one row but can process only one row at a time
+
+
+
+
+
+
+## Key
+***
+- Key is an attribute or set of attributes which help us to identify row or column
+
+* **Super Key**
+  > **Attribute or set of attributes that uniqueness in database is reffered as Super key**
+  > It is the superset of Candidate Key
+  
+* **Candidate Key**
+  > **A Super key with no repeated attribute is called Candidate key**
+  > The primary key should be selected from the candidate key
+ 
+* **Composite Key**
+  > **A key which has multiple attribute to uniquely identify rows in a table is called Composite Key**
+  
+* **Primary Key**
+  > **Primary key is a key which is uniquely identify the row and column**
+
+- Rules for Primary Key
+  - **Primary Key fields cannot be NULL**
+  - **It must for every row to have a primary key**
+  - **Primary key must be unique**
+  - **Primary Key column never updated if any foreign**
+  
+* **Foreign Key**
+  > **A set of attribute or attributes that is used to establish and enforce a link between data in two or more relations**
+  
+  - Foreign Key helps to maintain Data Integrity
+
