@@ -102,6 +102,11 @@ Database Management System
    > ***It is the highest level of data abstraction that only describe a part of database indirectly***
 
 
+## Data Independency
+***
+> **Data Independency means the capacity to change data from one level to another without affecting**
+
+
 
 ### **RDBMS**
 ***
@@ -111,6 +116,8 @@ Database Management System
 
 - Most modern Database Management System like ***MySQL, MicroSOft SQL Server, Oracle, IBM DB2 and Amazon Redsit*** are based on RDBMS
 
+> **It arrange data & Information into Rows and Columns**
+> Oracle, MySQL, SQL Server etc
 ### **SQL**
 ***
 - SQL stands for ***Structure Query Language***
@@ -279,5 +286,32 @@ Database Management System
      SELECT stu.name, sub.subject FROM students AS stu CROSS JOIN subjects AS sub;
   ```
   
+ ## Database Language
+ ***
+ - The language which is used to interact with database through some set of commands & perform **CRUD** opeation on Database
   
+  - **DDL**
+    - Data Definition Language
+    - Create
+    - Alter
+    - Drop
+    - Truncate
+  
+  - **DML**
+    - Data Manipulation Language
+    - Insert
+    - Update
+    - Delete
+    - select
+  
+  - **DCL**
+    - Data Control Language
+    - Grant
+    - Revoke
+  
+  - **TCL**
+    - Transaction Control Language
+    - Commit
+    - RollBack
+    - SavePoint
   
