@@ -8,6 +8,8 @@ Database Management System
 
 - Database can be vast and complex and such databases are developed using fixed design and modelling approaches.
 
+> **Database is a collection of inter-related data which is used to retrieve, insert, and delete the data efficiently**
+
 ### **DBMS**
 ***
 - DBMS stands for ***Database Management System.***
@@ -15,6 +17,90 @@ Database Management System
 - DBMS is a system software responsible for the **Creation, Retrieval, Updation and Management** of the database.
 
 - It ensures that our data is consistent, organized and easily accessible by serving as an Interface between the database and its end users or application software.
+
+> **DBMS is a software which is used to manage the Database with protection & Security in efficient way**
+> Example - Oracle, MySQL, SQLite, MongoDB etc
+
+### Why DBMS?
+***
+- **Protection & Security**
+- **Efficient**
+- **Maintain Data Consistency**
+- **Easy to use**
+
+
+## **ACID Property**
+***
+- **Atomicity**
+  > ***Either All or Nothing***
+ 
+- **Consistency**
+  > ***Data should be valid according to all defined Rule***
+ 
+- **Isolation**
+  > ***Transaction do not affect each other***
+  
+- **Durability**
+  > **Commited data would not be lost even after power failure**
+
+## File Approach vs Database Approach
+***
+| **File Approach** | **Database Approach** |
+|-------------------|----------------------|
+| Data Redundancy | No Data Redundancy |
+| Data Inconsistent | Data Consistency & Integrity |
+| Data Security Low     | Data Security High |
+| Difficult to Access Data as Compare to DBMS | Easy to access data |
+| Atomicity Issues | Atomicity follows|
+| Data Recovery Issues | Easy Data Recovery |
+| Static              | Flexible |
+
+
+## Schema
+***
+- **Schema** means **Structure** simply means **Table** which is **Rows & Columns**
+- Database Schema is the skeleton or structure that represents the logical view of entire database
+
+> ***Database schema means the overall strucure of database without data value***
+
+- There are 3 types of schema architecture
+[x]**External Schema**
+  - ***How to show data to users?***
+[x]**Conceptual Schema**
+  - ***What is the structure of Data?***
+[x]**Physical Schema**
+  - ***Where the data is physically present?***
+
+## Database Model or Data Modelling
+***
+- Data Modelling is a way to define the structure or logical design of database & the way of data is stored, accesses and updated in the database
+
+[x]**Relational Model**
+  > ***Data is oranised in 2-Dimensions***
+ 
+[x]**Hierarchical Model**
+  > ***Data is represented in a tree like structure***
+
+[x]**Network Model**
+  > ***Extension of Hierarchical Model***
+  
+[x]**ER-Model**
+  > ***Entity Relationship Model, Objects are divided into Entities and their characteristics***
+
+
+## Data Abstraction
+***
+- Data Abstraction means, The Process of Hidding background Details from the Users
+- There are 3 levels of Data Abstraction:-
+[x]**Physical Level**
+   > ***How data is stored actually?***
+   
+[x]**Logical Level**
+   > ***What are data get stored & what are the relationship among them?***
+
+[x]**View Level**
+   > ***It is the highest level of data abstraction that only describe a part of database indirectly***
+
 
 
 ### **RDBMS**
@@ -192,4 +278,6 @@ Database Management System
 - ```sql
      SELECT stu.name, sub.subject FROM students AS stu CROSS JOIN subjects AS sub;
   ```
+  
+  
   
