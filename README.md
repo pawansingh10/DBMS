@@ -64,27 +64,27 @@ Database Management System
 > ***Database schema means the overall strucure of database without data value***
 
 - There are 3 types of schema architecture
-[x]**External Schema**
-  - ***How to show data to users?***
-[x]**Conceptual Schema**
-  - ***What is the structure of Data?***
-[x]**Physical Schema**
-  - ***Where the data is physically present?***
+- [x]**External Schema**
+  > ***How to show data to users?***
+- [x]**Conceptual Schema**
+  > ***What is the structure of Data?***
+- [x]**Physical Schema**
+  > ***Where the data is physically present?***
 
 ## Database Model or Data Modelling
 ***
 - Data Modelling is a way to define the structure or logical design of database & the way of data is stored, accesses and updated in the database
 
-[x]**Relational Model**
+- [x]**Relational Model**
   > ***Data is oranised in 2-Dimensions***
  
-[x]**Hierarchical Model**
+- [x]**Hierarchical Model**
   > ***Data is represented in a tree like structure***
 
-[x]**Network Model**
+- [x]**Network Model**
   > ***Extension of Hierarchical Model***
   
-[x]**ER-Model**
+- [x]**ER-Model**
   > ***Entity Relationship Model, Objects are divided into Entities and their characteristics***
 
 
@@ -92,13 +92,13 @@ Database Management System
 ***
 - Data Abstraction means, The Process of Hidding background Details from the Users
 - There are 3 levels of Data Abstraction:-
-[x]**Physical Level**
+- [x]**Physical Level**
    > ***How data is stored actually?***
    
-[x]**Logical Level**
+- [x]**Logical Level**
    > ***What are data get stored & what are the relationship among them?***
 
-[x]**View Level**
+- [x]**View Level**
    > ***It is the highest level of data abstraction that only describe a part of database indirectly***
 
 
